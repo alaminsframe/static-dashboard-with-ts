@@ -32,6 +32,7 @@ const SideBar = () => {
               <SidebarItems
                 key={index}
                 title={item.title}
+                href={item.href}
                 icon={item.icon}
                 isActive={item.isActive}
                 open = {open}
