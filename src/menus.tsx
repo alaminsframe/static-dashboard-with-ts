@@ -12,7 +12,6 @@ import {
         title: "Dashboard",
         icon: FiHome,
         href: '/',
-        isActive: true,
     },
     {
         title: "Resources",

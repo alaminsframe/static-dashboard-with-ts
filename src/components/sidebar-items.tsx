@@ -22,10 +22,10 @@ export default function SidebarItem({
       <>
         <li key={title} className="text-slate-800" onClick={()=>(isActive==true)}>
           <Link to={href ?? '#'} className={`relative flex items-center gap-6 duration-300 rounded-full md:p-1 group ${open && "hover:bg-primary/10 data-[active=true]:bg-primary/10 "}`} data-active={isActive}>
-            <span className={`data-[active=true]:bg-primary group-hover:bg-primary data-[active=true]:text-white duration-300 rounded-full p-2.5 md:p-3`} data-active={isActive}>
+            <span className={`data-[active=true]:bg-primary data-[active=true]:text-white duration-300 rounded-full p-2.5 md:p-3`} data-active={isActive}>
               {React.createElement(icon, {
                 className:
-                  "h-4 md:h-5 w-4 md:w-5 group-hover:text-white data-[active=true]:text-white duration-300",
+                  "h-4 md:h-5 w-4 md:w-5 data-[active=true]:text-white duration-300",
                  
               })}
             </span>

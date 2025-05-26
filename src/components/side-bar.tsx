@@ -2,10 +2,12 @@ import { useState } from "react";
 import menu from "../menus";
 import SidebarItems from './sidebar-items';
 import { HiOutlineBars3BottomLeft } from "react-icons/hi2";
+import { useLocation } from "react-router";
 
 
 const SideBar = () => {
   const [open, setopen] = useState(true);
+  const location = useLocation()
  
   return (
     <>
@@ -34,7 +36,7 @@ const SideBar = () => {
                 title={item.title}
                 href={item.href}
                 icon={item.icon}
-                isActive={item.isActive}
+                isActive={item.href === location.pathname}
                 open = {open}
               />
             ))}
